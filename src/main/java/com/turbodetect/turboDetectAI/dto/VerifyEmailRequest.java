@@ -1,0 +1,14 @@
+package com.turbodetect.turboDetectAI.dto;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
+public record VerifyEmailRequest(
+        @Email(message = "Invalid email")
+        @NotBlank(message = "Email is required")
+        String email,
+
+        @NotBlank(message = "Verification code is required")
+        String code
+) {
+}
