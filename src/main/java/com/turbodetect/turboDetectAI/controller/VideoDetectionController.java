@@ -23,7 +23,6 @@ import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")
 public class VideoDetectionController {
 
     private final VideoDetectionHistoryService historyService;

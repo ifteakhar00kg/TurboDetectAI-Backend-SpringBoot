@@ -19,7 +19,6 @@ import java.nio.file.Paths;
 @RestController
 @RequestMapping("/api/profile")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")
 public class ProfileController {
 
     private final UserRepository userRepository;
