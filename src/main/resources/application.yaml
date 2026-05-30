@@ -3,9 +3,10 @@ spring:
     name: turboDetectAI
 
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/turbodetect_db
-    username: ifteakarahmed
-    password:
+    url: jdbc:postgresql://ep-lucky-term-ap33vv4h.c-7.us-east-1.aws.neon.tech/neondb?sslmode=require
+    username: neondb_owner
+    password: npg_uUjZRVwG9Pc1
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
@@ -14,6 +15,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
   servlet:
     multipart:
