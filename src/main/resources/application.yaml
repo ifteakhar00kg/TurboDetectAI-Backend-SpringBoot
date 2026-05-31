@@ -33,6 +33,7 @@ spring:
           auth: true
           starttls:
             enable: true
+            required: true
 
 jwt:
   secret: my-super-secret-key-my-super-secret-key-123456

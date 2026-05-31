@@ -15,7 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class DeepfakeService {
 
     private final RestTemplate restTemplate = new RestTemplate();
-    private final String PYTHON_API_URL = "http://127.0.0.1:8000";
+    private final String PYTHON_API_URL = "https://ifteakar-turbo-detect-ai.hf.space";
 
     public ResponseEntity<String> analyzeFile(MultipartFile file, String scanType) throws Exception {
         String endpoint = scanType.equalsIgnoreCase("deep") ? "/deep-scan" : "/quick-scan";
