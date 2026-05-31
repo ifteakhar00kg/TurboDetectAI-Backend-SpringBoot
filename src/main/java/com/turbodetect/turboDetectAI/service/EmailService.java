@@ -15,7 +15,7 @@ public class EmailService {
 
         SimpleMailMessage message = new SimpleMailMessage();
 
-        message.setFrom("rony00kg@gmail.com");
+        message.setFrom("rtv2nybtd4@privaterelay.appleid.com");
 
         message.setTo(toEmail);
         message.setSubject("TurboDetect AI - Verification Code");
